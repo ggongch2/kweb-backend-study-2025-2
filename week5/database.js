@@ -9,7 +9,7 @@ const pool = mysql.createPool({
 });
 
 
-const runQuery = async sql => {
+const runQuery = async (sql) => {
     const conn = await pool.getConnection();
     try {
         const [result] = await conn.query(sql);
