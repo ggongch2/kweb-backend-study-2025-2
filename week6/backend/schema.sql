@@ -1,6 +1,10 @@
 -- Create database
 USE kweb_db;
 
+DROP TABLE if EXISTS replies;
+DROP TABLE if EXISTS posts;
+DROP TABLE if EXISTS users;
+
 -- Users table
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
